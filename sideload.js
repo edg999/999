@@ -16,7 +16,7 @@ var is_auto_clicking = true;
 // Untested if left at false
 // MAJOR: After Direct Instructions, it will get stuck in a loop at going to the next assignment.  This must be fixed!
 
-var autodefi = true;
+var autodefi = false;
 // Default = true (If problems occur, try turning this off by replacing true with false)
 // Description: This will fill out textboxes for Vocabulary automatically using a method found by /u/Turtlemower.  The code for this part of the script was created by /u/Mrynot88 and has been greatly appreciated.
 // Bugs:
@@ -92,7 +92,7 @@ variable current_page is unused as of right now because of a bug
                 }
                 setTimeout(loadpage, 1000);
             }
-            document.querySelector('iframe').contentWindow.API.E2020.freeMovement = true
+            document.querySelector('iframe').contentWindow.API.E2020.freeMovement = false
             current_frame = document.getElementsByClassName("FrameCurrent FrameComplete")[0];
             //if(current_frame){
             //current_frame_id = current_frame.id;
